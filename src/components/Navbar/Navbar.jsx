@@ -1,17 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
+
 function Navbar({ titre }) {
   return (
-    <nav className="banner">
+    <nav>
       <div>
-        <img src={logo} alt="banner" />
+        <img src={logo} alt="logo Kasa" />
       </div>
       <ul>
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) => (!isActive ? "active-link" : undefined)}
+            className={({ isActive }) =>
+              !isActive ? "active-link" : undefined
+            }
           >
             Accueil
           </NavLink>
@@ -19,7 +22,9 @@ function Navbar({ titre }) {
         <li>
           <NavLink
             to="/about"
-            className={({ isActive }) => (!isActive ? "active-link" : undefined)}
+            className={({ isActive }) =>
+              !isActive ? "active-link" : undefined
+            }
           >
             A Propos
           </NavLink>

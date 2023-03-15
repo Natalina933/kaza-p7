@@ -1,9 +1,12 @@
-import React from 'react'
+import Banner from "../../components/Banner/Banner";
 
 function About() {
-  return (
-    <div>About</div>
-  )
-}
+  const index = 2;
 
-export default About
+  return (
+    <div className="wrapper about">
+      <Banner imageSrc={`./bgHome${index}.jpg`} />
+    </div>
+  );
+}
+export default About;
