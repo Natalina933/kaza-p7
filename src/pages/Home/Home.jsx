@@ -1,15 +1,27 @@
-import React from 'react'
-import Footer from '../../components/Footer/Footer'
-import Navbar from '../../components/Header/Navbar'
+import Banner from "../../components/Banner/Banner";
+import { useState, useEffect } from "react";
+import Card from "../../components/Card/Card";
 
-function Home() {
+function Home({ apparts }) {
+  const index = 1;
+  const [title, setTitle] = useState("");
+
+  useEffect(() => {
+    setTitle("Chez vous, partout et ailleurs");
+  }, []);
+
   return (
-    <div>
-      <Navbar/>
-<h1>Home</h1>
-      <Footer/>
+    <div className="wrapper home">
+      <Banner imageSrc={`./bgHome${index}.jpg`} title={title} key={index} />
+      {apparts.map((appart) => (
+        <Card
+          key={appart.id}
+          appartTitle={appart.title}
+          appartPicture={appart.cover}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
