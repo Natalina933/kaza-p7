@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from "../../assets/logo.png"
+
+
 function Navbar({titre}) {
   return (
     <nav className='banner'>
