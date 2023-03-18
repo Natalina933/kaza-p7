@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 function Navbar({ titre }) {
   return (
     <nav>
-      <div>
+      <div className="logo">
         <img src={logo} alt="logo Kasa" />
       </div>
       <ul>
@@ -13,7 +13,7 @@ function Navbar({ titre }) {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              !isActive ? "active-link" : undefined
+              isActive ? "active-link" : undefined
             }
           >
             Accueil
@@ -23,7 +23,7 @@ function Navbar({ titre }) {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              !isActive ? "active-link" : undefined
+              isActive ? "active-link" : undefined
             }
           >
             A Propos

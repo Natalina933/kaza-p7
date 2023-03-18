@@ -1,9 +1,13 @@
 import React from 'react'
-import "./footer.scss"
+import logofooter from "../../assets/logobw.png"
 
 function Footer() {
   return (
-    <footer>Footer</footer>
+    <footer>
+      <img src={logofooter} alt="" />
+      <p>© 2020 Kasa. All rights reserved</p>
+      
+    </footer>
   )
 }
 

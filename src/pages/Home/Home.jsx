@@ -11,7 +11,7 @@ function Home({ apparts }) {
   }, []);
 
   return (
-    <div className="wrapper home">
+    <div className="home">
       <Banner imageSrc={`./bgHome${index}.jpg`} title={title} key={index} />
       {apparts.map((appart) => (
         <Card
