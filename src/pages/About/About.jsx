@@ -1,11 +1,10 @@
 import Banner from "../../components/Banner/Banner";
-
+import ImageA from "../../assets/bgHome2.jpg"
 function About() {
-  const index = 2;
 
   return (
     <div className="wrapper about">
-      <Banner imageSrc={`./bgHome${index}.jpg`} />
+      <Banner imageSrc={ImageA} title="" />
     </div>
   );
 }

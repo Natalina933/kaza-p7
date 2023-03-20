@@ -1,0 +1,21 @@
+.menusCards {
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 335px;
+  height: 255px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  size: 18px;
+  @media screen and (min-width: 767px) {
+    height: 340px;
+    width: 340px;
+    bottom:10px;
+    left: 5px;
+  }
+  h3 {
+    position: absolute;
+  }
+}
