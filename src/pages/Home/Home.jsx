@@ -1,18 +1,11 @@
 import Banner from "../../components/Banner/Banner";
-import { useState, useEffect } from "react";
 import Card from "../../components/Card/Card";
-
+import ImageB from "../../assets/bgHome1.jpg"
 function Home({ apparts }) {
-  const index = 1;
-  const [title, setTitle] = useState("");
-
-  useEffect(() => {
-    setTitle("Chez vous, partout et ailleurs");
-  }, []);
-
+console.log(apparts);
   return (
     <div className="home">
-      <Banner imageSrc={`./bgHome${index}.jpg`} title={title} key={index} />
+      <Banner imageSrc={ImageB} title="Chez vous, partout et ailleurs" />
       {apparts.map((appart) => (
         <Card
           key={appart.id}
