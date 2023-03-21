@@ -9,6 +9,7 @@
   cursor: pointer;
   z-index: 3;
   size: 18px;
+  background: linear-gradient(0deg, rgba(9,9,9,0.8730301734028026) 0%, rgba(255,255,255,1) 100%);
   @media screen and (min-width: 767px) {
     height: 340px;
     width: 340px;
@@ -17,5 +18,7 @@
   }
   h3 {
     position: absolute;
+    color: white;
+
   }
 }
