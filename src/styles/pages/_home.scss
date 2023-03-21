@@ -1,11 +1,24 @@
-.home{
-    width: 100%;
-    margin: 0 auto;
-    padding: 22px 19px 22px 21px;
+.home {
+  width: 100%;
+  margin: 0 auto;
+  padding: 22px 19px 22px 21px;
 
-    @media screen and (min-width:768px)
-        { max-width: 1440px;
-        margin: 0 auto;
-        
+  @media screen and (min-width: 768px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px;
+
     }
+
+  }
 }
