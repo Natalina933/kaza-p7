@@ -5,19 +5,16 @@
   height: 255px;
   overflow: hidden;
   cursor: pointer;
-  margin-top: 22px;
   @media screen and (min-width: 767px) {
     height: 340px;
     width: 30%;
-
   }
+
   h3 {
     position: absolute;
     color: white;
     bottom: 10px;
     left: 5px;
     font-size: 14px;
-
-
   }
 }
