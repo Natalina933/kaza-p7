@@ -9,6 +9,13 @@ footer {
     align-items: center;
     padding-top:62px;
     padding-bottom:62px;
+    
+    & img{
+object-fit: cover;
+
+width: 100%;
+
+    }
     @media screen and (min-width: 768px) {
         padding-top:66px;
     padding-bottom:29px;
