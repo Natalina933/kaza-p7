@@ -1,44 +1,10 @@
 @use "../../styles/variables/variables" as *;
 
 .wapperLodging {
-  color: $color-primary;
-  height: 255px;
-  margin: 20px 20px 20px 20px;
-  font-weight: 500;
-  h1{
-    font-size: 18px;
-    margin-top: 15px;
-
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 767px) {
+    max-width: 1240px;
   }
-  
-  h2{
-    font-size: 14px;
-
-  }
-  .imageC {
-    border-radius: 10px;
-    
-ul{
-  display: flex;
-  flex-direction: row;
-}
-@media screen and (min-width:768px) {
-  border-radius: 25px;
-}
-}
-.lodging__tag{
-h3
-{background-color: $color-primary;
-
-    color:$color-tertiary;
-     border-radius: 10px;}    
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    flex-direction: row;
-    padding: 0.3em 1em;
-    gap: 10rem;
- 
-
-  }
-  
 }

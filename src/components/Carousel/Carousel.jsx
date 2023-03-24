@@ -1,15 +1,16 @@
-import React from "react";
-import "../Carousel/Carousel.scss";
+import React from 'react'
+import leftarrow from "../../assets/leftarrow.svg"
+import rightarrow from "../../assets/rightarrow.svg"
 
-function Carousel({ carouselPictures }) {
-    console.log(carouselPictures);
-    return (
-    <div className="carousel">
-        <button className="prev">prev</button>
-        <img src={carouselPictures[0]} alt="" />
-        <button className="next">next</button>
-        </div>
-    );
+function Carousel({appartPictures}) {
+    console.log(appartPictures);
+  return (
+    <div className='carousel'>
+        <img className='leftarrow' src={leftarrow} alt="/" />
+        <img src={appartPictures[0]} alt="" />
+        <img className='rightarrow' src={rightarrow} alt="/" />
+    </div>
+  )
 }
 
-export default Carousel;
+export default Carousel

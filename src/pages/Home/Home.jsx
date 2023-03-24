@@ -12,6 +12,7 @@ function Home({ apparts }) {
             key={appart.id}
             appartTitle={appart.title}
             appartPicture={appart.cover}
+            lodgingId={appart.id}
           />
         ))}
       </div>

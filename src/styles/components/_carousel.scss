@@ -1,0 +1,14 @@
+.carousel {
+  height: 255px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  .leftarrow,
+  .rightarrow {
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    z-index: 2;
+}
+}
