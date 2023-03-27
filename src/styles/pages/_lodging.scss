@@ -18,6 +18,10 @@ h2{
   @media screen and (min-width: 767px) {
     max-width: 1240px;
   }
+  .lodging__wrapper{
+    padding: 20px;
+    margin: 0 auto;
+  }
 }
 .lodging__hostImg {
   border-radius: 50%;
@@ -36,18 +40,17 @@ h2{
   display: flex;
   border-radius: 5px;
   padding :0.2em  ;
-
+font-size: 10px;
   ol{
     display: flex;
     gap: 1rem;
+    text-align: center;
   }
   
   li{
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    width: 115px;
-    border-radius: 10px;
+    height: 18px;
+    width: 84px;
+    border-radius: 5px;
   background-color: $color-primary;
   color: $color-tertiary;
   list-style-type: none;
