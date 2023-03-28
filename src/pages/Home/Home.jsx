@@ -1,8 +1,14 @@
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import ImageB from "../../assets/bgHome1.jpg";
-function Home({ apparts }) {
-  console.log(apparts);
+import { API_getAllLodgings } from "../../API";
+import { useLoaderData } from "react-router-dom";
+
+export async function getAllLodgings() {
+  return await API_getAllLodgings()
+}
+function Home() {
+  const{apparts}= useLoaderData()
   return (
     <div className="home">
       <Banner imageSrc={ImageB} title="Chez vous, partout et ailleurs" />

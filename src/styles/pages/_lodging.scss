@@ -1,15 +1,15 @@
 @use "../../styles/variables/variables" as *;
-.lodging__page{
+.lodging__page {
   color: $color-primary;
-h1{
-  font-weight: 500;
-  font-size: 36px;
-  margin-top: 10px;
+  h1 {
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 10px;
   }
-h2{
-  margin-top: 5px;
-  font-size: 18px;
-}
+  h2 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
 }
 .lodging__carousel {
   padding: 20px;
@@ -18,7 +18,7 @@ h2{
   @media screen and (min-width: 767px) {
     max-width: 1240px;
   }
-  .lodging__wrapper{
+  .lodging__wrapper {
     padding: 20px;
     margin: 0 auto;
   }
@@ -33,26 +33,32 @@ h2{
     overflow: hidden;
     object-fit: cover;
   }
-
 }
-
+.lodging__stars{
+  display: flex;
+i{
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+}
 .lodging__tags {
   display: flex;
   border-radius: 5px;
-  padding :0.2em  ;
-font-size: 10px;
-  ol{
+  padding: 0.2em;
+  font-size: 10px;
+  ol {
     display: flex;
     gap: 1rem;
     text-align: center;
   }
-  
-  li{
+  li {
     height: 18px;
-    width: 84px;
+    width: 100%;
     border-radius: 5px;
-  background-color: $color-primary;
-  color: $color-tertiary;
-  list-style-type: none;
-}
+    background-color: $color-primary;
+    color: $color-tertiary;
+    list-style-type: none;
+  }
+
 }
