@@ -5,10 +5,11 @@ import { API_getAllLodgings } from "../../API";
 import { useLoaderData } from "react-router-dom";
 
 export async function getAllLodgings() {
-  return await API_getAllLodgings()
+  const Lodgings = await API_getAllLodgings();
+  return { apparts: Lodgings };
 }
 function Home() {
-  const{apparts}= useLoaderData()
+  const { apparts } = useLoaderData(); 
   return (
     <div className="home">
       <Banner imageSrc={ImageB} title="Chez vous, partout et ailleurs" />

@@ -1,13 +1,22 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
+import { API_getLodgingById } from "../../API";
 import Carousel from "../../components/Carousel/Carousel";
 import Collapse from "../../components/Collapse/Collapse";
 import InfosAppart from "../../components/InfosAppart/InfosAppart";
 import InfosHost from "../../components/InfosAppart/InfosHost";
-function Lodging({ apparts }) {
-  const { lodgingId } = useParams();
-  const appart = apparts.find((appart) => appart.id === lodgingId);
-  console.log(appart);
+
+export const getLodgingById = async ({params})=>{
+  const {lodgingId} = params
+  const appart = await API_getLodgingById(lodgingId)
+  if(!appart){
+    throw new Error ('Appart Not found')
+  }
+  return {appart}
+}
+
+function Lodging() {
+  const {appart} = useLoaderData()
   return (
     <>
       <div className="lodging__page">
