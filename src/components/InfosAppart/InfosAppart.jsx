@@ -1,17 +1,16 @@
 import React from "react";
 import Tags from "../InfosAppart/Tags";
 
-function InfosAppart({ appart }) {
-  console.log(appart);
+function InfosAppart({ title, location, tags }) {
   return (
     <>
       <div className="lodging__title">
-        <h1>{appart.title}</h1>
-        <h2>{appart.location}</h2>
+        <h1>{title}</h1>
+        <h2>{location}</h2>
       </div>
       <div className="lodging__tags">
         <ol className="itemsTags">
-          <Tags tags={appart.tags} />
+          <Tags tags={tags} />
         </ol>
       </div>
     </>

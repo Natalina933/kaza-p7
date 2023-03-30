@@ -29,7 +29,7 @@ function Carousel({ appartPictures }) {
         alt="/"
         onClick={nextImage}
       />
-      <div className="bulletPoints">{bulletPoints}</div>
+      <div className="bulletPoints">{bulletPoints }</div>
       <p>{indexImage+1}/{appartPictures.length}</p>
 
     </div>
