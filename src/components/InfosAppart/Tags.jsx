@@ -3,7 +3,7 @@ import React from "react";
 function Tags({tags}) {
   return <div className="lodging__tags">
   <ol>
-    <li>{tags}</li>
+    <li className="tag">{tags}</li>
   </ol>
   </div>;
 }
