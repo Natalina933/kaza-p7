@@ -42,23 +42,4 @@ i{
   text-align: center;
 }
 }
-.lodging__tags {
-  display: flex;
-  border-radius: 5px;
-  padding: 0.2em;
-  font-size: 10px;
-  ol {
-    display: flex;
-    gap: 1rem;
-    text-align: center;
-  }
-  li {
-    height: 18px;
-    width: 100%;
-    border-radius: 5px;
-    background-color: $color-primary;
-    color: $color-tertiary;
-    list-style-type: none;
-  }
 
-}

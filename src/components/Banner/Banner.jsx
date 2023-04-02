@@ -5,7 +5,9 @@ function Banner(props) {
     return (
     <div className="banner">
         <img src={imageSrc} alt="Paysage" />
-        <h1>{title}</h1>
+        <div className="overlay">
+            <h1>{title}</h1>
+        </div>
     </div>
     );
 }
