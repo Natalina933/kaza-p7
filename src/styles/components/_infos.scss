@@ -1,4 +1,15 @@
-.lodging__tags {
-    display: flex;
-    gap: 10px;
-  }
+.lodging__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // autres styles
+}
+
+
+.lodging__host {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  // autres styles
+}
+

@@ -6,37 +6,49 @@ import Collapse from "../../components/Collapse/Collapse";
 import InfosHost from "../../components/InfosAppart/InfosHost";
 import Tags from "../../components/InfosAppart/Tags";
 
-
-export const getLodgingById = async ({params})=>{
-  const {lodgingId} = params
-  const appart = await API_getLodgingById(lodgingId)
-  if(!appart){
-    throw new Error ('Appart Not found')
+export const getLodgingById = async ({ params }) => {
+  const { lodgingId } = params;
+  const appart = await API_getLodgingById(lodgingId);
+  if (!appart) {
+    throw new Error("Appart Not found");
   }
-  return {appart}
-}
+  return { appart };
+};
 
 function Lodging() {
-  const {appart} = useLoaderData()
+  const { appart } = useLoaderData();
   return (
     <>
       <div className="lodging__page">
         <div className="lodging__carousel">
           <Carousel appartPictures={appart.pictures} />
         </div>
-      <div className="lodging__title">
-        <h1>{appart.title}</h1>
-        <h2>{appart.location}</h2>
-      </div>
-      <div className="lodging__tags">
-        <ol className="itemsTags">
-          <Tags tags={appart.tags} />
-        </ol>
-      </div>
-        <div className="lodging__wrapper">
-          <InfosHost appart={appart} />
-          <Collapse appart={appart} />
+        <div className="lodging__infos">
+          <div className="lodging__title">
+            <h1>{appart.title}</h1>
+            <h2>{appart.location}</h2>
+          </div>
+          <div className="lodging__tags">
+            <ol className="itemsTags">
+              <Tags tags={appart.tags} />
+            </ol>
+          </div>
+          <div className="lodging__wrapper">
+            <InfosHost appart={appart} />
+          </div>
         </div>
+        <Collapse
+          id={appart.id}
+          title="Description"
+          content={appart.description}
+        />
+        <Collapse
+          key={appart.id}
+          title="Equipements"
+          content={appart.equipements?.map((equipts, index) => {
+            return <li key={index}>{equipts}</li>;
+          })}
+        />
       </div>
     </>
   );
