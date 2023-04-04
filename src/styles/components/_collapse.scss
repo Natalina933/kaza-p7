@@ -1,59 +1,51 @@
 @use "../../styles/variables/variables" as *;
 .collapse {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    
-    &__header {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 582px;
+  height: 249px;
+
+  __header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
-    
 
     h3 {
       margin: 0;
       font-size: 18px;
       font-weight: bold;
     }
-    
     img {
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 9.14px;
       transition: transform 0.3s ease-in-out;
-    
+
       &.rotate {
         transform: rotate(180deg);
       }
     }
-    }
-    
-    &__content {
-    display: none;
+  }
+
+  __content {
     padding: 10px;
-    
-   
+    border-radius: 10px;
+
     p {
       margin: 0;
       font-size: 16px;
       line-height: 1.5;
     }
-    }
-    
-    &__contentDisplay {
+  }
+
+  __contentDisplay {
     padding: 10px;
- 
     p {
       margin: 0;
       font-size: 16px;
       line-height: 1.5;
     }
-    }
-    
-    &.active {
-    &__content {
-    display: block;
-    }
-    }
-    }
+  }
+}

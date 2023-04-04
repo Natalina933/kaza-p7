@@ -17,6 +17,15 @@
   margin: 0 auto;
   @media screen and (min-width: 767px) {
     max-width: 1240px;
+    .carousel {
+      height: 415px;
+      border-radius: 25px;
+      .leftarrow,
+      .rightarrow {
+        width: 46.68px;
+        height: 79.2px;
+      }
+    }
   }
   .lodging__wrapper {
     padding: 20px;
@@ -34,12 +43,11 @@
     object-fit: cover;
   }
 }
-.lodging__stars{
+.lodging__stars {
   display: flex;
-i{
-  display: flex;
-  gap: 1rem;
-  text-align: center;
+  i {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+  }
 }
-}
-
