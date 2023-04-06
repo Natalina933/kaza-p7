@@ -3,16 +3,24 @@
   color: $color-primary;
   h1 {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 18px;
     margin-top: 10px;
   }
+
   h2 {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 19.96px;
+    font-weight: 500;
+  }
+  @media screen and (min-width: 767px) {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 36px;
   }
 }
 .lodging__carousel {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   width: 100%;
   margin: 0 auto;
   @media screen and (min-width: 767px) {
@@ -32,11 +40,18 @@
     margin: 0 auto;
   }
 }
+.lodging__infos {
+  .lodging__title {
+    margin-left: 20px;
+  }
+}
 .lodging__hostImg {
   border-radius: 50%;
+
   background-color: #c4c4c4;
   width: 32px;
   height: 32px;
+
   img {
     border-radius: 50%;
     overflow: hidden;
