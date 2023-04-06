@@ -4,14 +4,15 @@
   border-radius: 5px;
   margin-bottom: 20px;
   width: 582px;
-  height: 249px;
 
-  __header {
+  &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
+    background-color: $color-primary;
+    color:$color-tertiary;
 
     h3 {
       margin: 0;

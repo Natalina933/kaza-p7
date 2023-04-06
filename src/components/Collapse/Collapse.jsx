@@ -1,7 +1,7 @@
 import arrow from "../../assets/downarrow.svg";
 import React, { useState } from "react";
 
-const Collapse = ({ id, title, content }) => {
+const Collapse = ({ title, children }) => {
   const [isActive, setIsActive] = useState(true);
 
   const displayContent = () => {
@@ -10,24 +10,17 @@ const Collapse = ({ id, title, content }) => {
 
   return (
     <>
-      <div key={id} className="collapse">
-        <div className="collapse__header">
+      <div className="collapse">
+        <div className="collapse__header" onClick={displayContent}>
           <h3>{title}</h3>
-          <img
-            src={arrow}
-            alt=""
-            onClick={displayContent}
-            className={isActive ? "rotate" : ""}
-          />
+          <img src={arrow} alt="" className={isActive ? "rotate" : ""} />
         </div>
         {!isActive ? (
           <div className="collapse__contentDisplay">
-            <p>{content}</p>
+            {children}
           </div>
         ) : (
-          <div className="collapse__content">
-            <p>{content}</p>
-          </div>
+          <></>
         )}
       </div>
     </>
