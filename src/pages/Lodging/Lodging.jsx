@@ -43,7 +43,7 @@ function Lodging() {
         <Collapse title="Equipements">
           <ul>
             {
-            appart.equipements?.map((equipts, index) => {
+            appart.equipments.map((equipts, index) => {
               return <li key={index}>{equipts}</li>;
             })
             }
