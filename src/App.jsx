@@ -6,8 +6,11 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
-      <Outlet />
+      <div className="site-wrapper">
+        <Navbar />
+        <Outlet />
+      </div>
+
       <Footer />
     </>
   );

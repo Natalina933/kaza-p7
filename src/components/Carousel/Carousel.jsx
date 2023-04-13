@@ -6,7 +6,7 @@ function Carousel({ appartPictures }) {
   const [indexImage, setIndexImage] = useState(0);
   function backImage() {
     setIndexImage(
-      (indexImage + appartPictures.length + 1) % appartPictures.length
+      (indexImage + appartPictures.length - 1) % appartPictures.length
     );
   }
   function nextImage() {
