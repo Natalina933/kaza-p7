@@ -4,20 +4,24 @@ import rightarrow from "../../assets/rightarrow.svg";
 
 function Carousel({ appartPictures }) {
   const [indexImage, setIndexImage] = useState(0);
+
   function backImage() {
-    setIndexImage(
-      (indexImage + appartPictures.length - 1) % appartPictures.length
-    );
+    setIndexImage((currentIndex) => {
+      return (currentIndex + appartPictures.length - 1) % appartPictures.length;
+    });
   }
   function nextImage() {
-    setIndexImage((indexImage + 1) % appartPictures.length);
+    setIndexImage((currentIndex) => {
+      return (currentIndex + appartPictures.length + 1) % appartPictures.length;
+    })
   }
 
-  const bulletPoints = appartPictures.map((_,index)=>(
+  const bulletPoints = appartPictures.map((_, index) => (
     <span
-    key={index}
-    className={index=== indexImage ? "active": ""}
-    onClick={()=>setIndexImage(index)}/>
+      key={index}
+      className={index === indexImage ? "active" : ""}
+      onClick={() => setIndexImage(index)}
+    />
   ));
   return (
     <div className="carousel">
@@ -29,9 +33,10 @@ function Carousel({ appartPictures }) {
         alt="/"
         onClick={nextImage}
       />
-      <div className="bulletPoints">{bulletPoints }</div>
-      <p>{indexImage+1}/{appartPictures.length}</p>
-
+      <div className="bulletPoints">{bulletPoints}</div>
+      <p>
+        {indexImage + 1}/{appartPictures.length}
+      </p>
     </div>
   );
 }
