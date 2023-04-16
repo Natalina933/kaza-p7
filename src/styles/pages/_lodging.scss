@@ -13,7 +13,7 @@
     line-height: 19.96px;
     font-weight: 500;
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     max-width: 1440px;
     margin: 0 auto;
     font-size: 36px;
@@ -22,7 +22,7 @@
 .lodging__carousel {
   width: 100%;
   margin: 0 auto;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     max-width: 1240px;
     .carousel {
       height: 415px;
@@ -39,11 +39,20 @@
     margin: 0 auto;
   }
 }
-.lodging__infos {
-  .lodging__title {
-    margin-left: 20px;
+.lodging__wrapperHost {
+  display: flex;
+  flex-direction: row;
+}
+.lodging__hostInfos {
+  display: flex;
+  margin: 0 0 8px 0;
+  gap: 1rem;
+  h2 {
+    max-width: 93px;
+    padding-left: 10px;
   }
 }
+
 .lodging__hostImg {
   border-radius: 50%;
 
