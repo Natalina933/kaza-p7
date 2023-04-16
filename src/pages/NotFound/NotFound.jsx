@@ -7,13 +7,13 @@ export default function ErrorPage() {
   console.error(error);
 
   return (
-    <div id="error-page">
+    <div className="error-page">
       <h1>404</h1>
       <p>Oups! La page que vous demandez n'existe pas.</p>
-      <p>
+      {/* <p>
         <i>{error.statusText || error.message}</i>
-      </p>
-      <Link to="/" >Retourner sur la page d'accueil</Link>
+      </p> */}
+      <Link to="/">Retourner sur la page d'accueil</Link>
     </div>
   );
 }

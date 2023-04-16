@@ -47,7 +47,9 @@
   display: flex;
   margin: 0 0 8px 0;
   gap: 1rem;
+  align-items: center;
   h2 {
+    justify-content: flex-end;
     max-width: 93px;
     padding-left: 10px;
   }
