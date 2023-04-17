@@ -4,11 +4,13 @@ import rightarrow from "../../assets/rightarrow.svg";
 
 function Carousel({ appartPictures }) {
   const [indexImage, setIndexImage] = useState(0);
+  
   function backImage() {
     setIndexImage(
       (indexImage + appartPictures.length - 1) % appartPictures.length
     );
   }
+  
   function nextImage() {
     setIndexImage((indexImage + 1) % appartPictures.length);
   }
