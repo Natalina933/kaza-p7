@@ -12,9 +12,7 @@ function Navbar({ titre }) {
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              isActive ? "active-link" : undefined
-            }
+            className={({ isActive }) => (isActive ? "active-link" : undefined)}
           >
             Accueil
           </NavLink>
@@ -22,9 +20,7 @@ function Navbar({ titre }) {
         <li>
           <NavLink
             to="/about"
-            className={({ isActive }) =>
-              isActive ? "active-link" : undefined
-            }
+            className={({ isActive }) => (isActive ? "active-link" : undefined)}
           >
             A Propos
           </NavLink>

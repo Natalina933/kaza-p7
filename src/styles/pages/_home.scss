@@ -1,21 +1,25 @@
 .home {
   width: 100%;
   margin: 0 auto;
-  padding: 22px 19px 22px 21px;
 
   @media screen and (min-width: 768px) {
     max-width: 1440px;
     margin: 0 auto;
   }
   .cards {
-    background-color: #f7f7f7;
+    margin-top: 2em;
     display: grid;
-    border-radius: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 20px;
-    @media screen and (min-width: 767px) {
-      
-      margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      background-color: #f7f7f7;
+      padding: 40px;
+      border-radius: 25px;
+    }
+    @media screen and (min-width: 1025px) {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }
