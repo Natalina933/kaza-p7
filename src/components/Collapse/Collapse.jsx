@@ -16,9 +16,7 @@ const Collapse = ({ title, children }) => {
           <img src={arrow} alt="" className={isActive ? "rotate" : ""} />
         </div>
         {!isActive ? (
-          <div className="collapse__contentDisplay">
-            {children}
-          </div>
+          <div className="collapse__contentDisplay">{children}</div>
         ) : (
           <></>
         )}
