@@ -1,23 +1,28 @@
 @use "../../styles/variables/variables" as *;
 .lodging__tags {
-
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  ul {
+    display: flex;
     gap: 10px;
-    margin-bottom: 10px;
-    margin-top: 3px;
-}
-  
-  .itemsTags {
-  list-style: none;
+    flex-wrap: wrap;
   }
-  .tag {
-    color:$color-tertiary;
-    font-size: 10px;
-    display: inline-block;
-    width: auto;
-    background-color: #ff5060;
-    border-radius: 5px;
-    margin-right: 10px;
-    padding: 6px;
-    }
+}
+
+.itemsTags {
+  list-style: none;
+}
+.tag {
+  color: $color-tertiary;
+  font-size: 10px;
+  display: inline-block;
+  width: auto;
+  background-color: #ff5060;
+  border-radius: 5px;
+  padding: 6px;
+  min-width: 80px;
+  text-align: center;
+}

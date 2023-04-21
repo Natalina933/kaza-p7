@@ -10,11 +10,11 @@ function Carousel({ appartPictures }) {
       return (currentIndex + appartPictures.length - 1) % appartPictures.length;
     });
   }
-  
+
   function nextImage() {
     setIndexImage((currentIndex) => {
       return (currentIndex + appartPictures.length + 1) % appartPictures.length;
-    })
+    });
   }
 
   const bulletPoints = appartPictures.map((_, index) => (
@@ -26,18 +26,28 @@ function Carousel({ appartPictures }) {
   ));
   return (
     <div className="carousel">
-      <img className="leftarrow" src={leftarrow} alt="/" onClick={backImage} />
       <img src={appartPictures[indexImage]} alt="" />
-      <img
-        className="rightarrow"
-        src={rightarrow}
-        alt="/"
-        onClick={nextImage}
-      />
-      <div className="bulletPoints">{bulletPoints}</div>
-      <p>
-        {indexImage + 1}/{appartPictures.length}
-      </p>
+      {appartPictures.length > 1 && ( //je vérifie et si sup. à 1 alors j'affiche...
+        <>
+          <img
+            className="leftarrow"
+            src={leftarrow}
+            alt="/"
+            onClick={backImage}
+          />
+
+          <img
+            className="rightarrow"
+            src={rightarrow}
+            alt="/"
+            onClick={nextImage}
+          />
+          <div className="bulletPoints">{bulletPoints}</div>
+          <p>
+            {indexImage + 1}/{appartPictures.length}
+          </p>
+        </>
+      )}
     </div>
   );
 }

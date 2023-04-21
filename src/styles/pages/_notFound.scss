@@ -1,32 +1,41 @@
 @use "../../styles/variables/variables" as *;
 
 .error-page {
-    color: $color-primary;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    h1 {
+  color: $color-primary;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 4em;
+  h1 {
     font-size: 96px;
     font-weight: 700;
-    }
-    p {
+  }
+  p {
     align-items: center;
     max-width: 260px;
-    }
-    a {
+  }
+  a {
+    margin-top: 3em;
     font-size: 14px;
-    position: absolute;
-    bottom: 133px;
-    color:$color-primary;
-;    
-}
+    color: $color-primary;
+  }
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 210px;
+    }
+    p {
+      max-width: 260px;
+      font-size: 2rem;
+    }
+    // a {
+    //   margin-top: 3em;
+    //   font-size: 14px;
+
+    //   color: $color-primary;
+    // }
+  }
 }

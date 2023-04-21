@@ -1,6 +1,8 @@
 @use "../../styles/variables/variables" as *;
 .lodging__page {
+  width: 100%;
   color: $color-primary;
+
   h1 {
     font-weight: 500;
     font-size: 18px;
@@ -23,7 +25,6 @@
   width: 100%;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    max-width: 1240px;
     .carousel {
       height: 415px;
       border-radius: 25px;
@@ -52,6 +53,7 @@
     justify-content: flex-end;
     max-width: 93px;
     padding-left: 10px;
+    text-align: right;
   }
 }
 
