@@ -37,18 +37,22 @@ function Lodging() {
             <InfosHost appart={appart} />
           </div>
         </div>
-        <Collapse title="Description">
-          <p>{appart.description}</p>
-        </Collapse>
-        <Collapse title="Equipements">
-          <ul>
-            {
-            appart.equipments.map((equipts, index) => {
-              return <li key={index}>{equipts}</li>;
-            })
-            }
-          </ul>
-        </Collapse>
+        <div className="lodging__wrapperCollapses">
+          <div className="lodging__collapse">
+            <Collapse title="Description">
+              <p>{appart.description}</p>
+            </Collapse>
+            <Collapse title="Equipements">
+              <ul>
+                {
+                appart.equipments.map((equipts, index) => {
+                  return <li key={index}>{equipts}</li>;
+                })
+                }
+              </ul>
+            </Collapse>
+          </div>
+        </div>
       </div>
     </>
   );
