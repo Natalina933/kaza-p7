@@ -56,7 +56,13 @@
     text-align: right;
   }
 }
-
+.lodging__collapse{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
 .lodging__hostImg {
   border-radius: 50%;
   background-color: #c4c4c4;

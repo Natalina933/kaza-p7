@@ -1,13 +1,13 @@
 import React from "react";
 import Collapse from "../../components/Collapse/Collapse";
 import Banner from "../../components/Banner/Banner";
-import ImageB from "../../assets/bgHome1.jpg";
+import ImageA from "../../assets/bgHome2.jpg";
 
 function About() {
   return (
     <>
-      <Banner imageSrc={ImageB} title="" />
-      <div className="lodging__collapse">
+      <Banner imageSrc={ImageA} title="" />
+      <div className="about__collapse">
         <Collapse title="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les

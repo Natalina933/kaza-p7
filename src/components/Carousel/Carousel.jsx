@@ -17,13 +17,13 @@ function Carousel({ appartPictures }) {
     });
   }
 
-  const bulletPoints = appartPictures.map((_, index) => (
-    <span
-      key={index}
-      className={index === indexImage ? "active" : ""}
-      onClick={() => setIndexImage(index)}
-    />
-  ));
+  // const bulletPoints = appartPictures.map((_, index) => (
+  //   <span
+  //     key={index}
+  //     className={index === indexImage ? "active" : ""}
+  //     onClick={() => setIndexImage(index)}
+  //   />
+  // ));
   return (
     <div className="carousel">
       <img src={appartPictures[indexImage]} alt="" />
@@ -42,7 +42,7 @@ function Carousel({ appartPictures }) {
             alt="/"
             onClick={nextImage}
           />
-          <div className="bulletPoints">{bulletPoints}</div>
+          {/* <div className="bulletPoints">{bulletPoints}</div> */}
           <p>
             {indexImage + 1}/{appartPictures.length}
           </p>
