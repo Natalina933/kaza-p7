@@ -3,7 +3,8 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 20px;
-  width: 335px;
+  width: 100%;
+  margin-top: 31px;
 
   &__header {
     display: flex;
@@ -12,7 +13,8 @@
     padding: 10px;
     cursor: pointer;
     background-color: $color-primary;
-    color:$color-tertiary;
+    color: $color-tertiary;
+    border-radius: 10px;
 
     h3 {
       margin: 0;
@@ -30,7 +32,7 @@
     }
   }
 
-  __content {
+  &__content {
     padding: 10px;
     border-radius: 10px;
 
@@ -41,12 +43,19 @@
     }
   }
 
-  __contentDisplay {
+  &__contentDisplay {
     padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
     p {
       margin: 0;
       font-size: 16px;
       line-height: 1.5;
+      color: $color-primary;
+      padding: 0 10px 10px;
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
     }
   }
 }
