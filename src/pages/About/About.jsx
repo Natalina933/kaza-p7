@@ -1,10 +1,13 @@
 import React from "react";
 import Collapse from "../../components/Collapse/Collapse";
+import Banner from "../../components/Banner/Banner";
+import ImageB from "../../assets/bgHome1.jpg";
 
 function About() {
   return (
-    <div className="collapse">
-      <>
+    <>
+      <Banner imageSrc={ImageB} title="" />
+      <div className="lodging__collapse">
         <Collapse title="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
@@ -36,8 +39,8 @@ function About() {
             ateliers sur la sécurité domestique pour nos hôtes.
           </p>
         </Collapse>
-      </>
-    </div>
+      </div>
+    </>
   );
 }
 
