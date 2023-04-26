@@ -1,8 +1,12 @@
 .lodging__wrapperinfosHost {
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column-reverse;
+  margin-inline-end: 24px;
 }
+
 
 
 .lodging__host {
@@ -10,7 +14,7 @@
   grid-template-columns: 1fr;
   align-items: center;
 }
-lodging__infos{
+.lodging__infos{
   display: flex;
   flex-direction: row;
 }

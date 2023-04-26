@@ -56,7 +56,7 @@
     text-align: right;
   }
 }
-.lodging__collapse{
+.lodging__collapse {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -81,5 +81,8 @@
     display: flex;
     gap: 1rem;
     text-align: center;
+  }
+  .inactive-star {
+    color: #e3e3e3;
   }
 }
