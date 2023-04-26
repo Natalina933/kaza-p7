@@ -36,8 +36,8 @@
     }
   }
   .lodging__wrapperinfosHost {
-    padding: 20px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 }
 .lodging__wrapperHost {
@@ -46,7 +46,7 @@
 }
 .lodging__hostInfos {
   display: flex;
-  margin: 0 0 8px 0;
+  margin: 1px 0px 2px 176px;
   gap: 1rem;
   align-items: center;
   h2 {
