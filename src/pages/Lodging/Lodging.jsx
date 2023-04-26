@@ -24,16 +24,18 @@ function Lodging() {
           <Carousel appartPictures={appart.pictures} />
         </div>
         <div className="lodging__infos">
-          <div className="lodging__title">
-            <h1>{appart.title}</h1>
-            <h2>{appart.location}</h2>
+          <div className="wrapperTitleTags">
+            <div className="lodging__title">
+              <h1>{appart.title}</h1>
+              <h2>{appart.location}</h2>
+            </div>
+            <div className="lodging__tags">
+              <ol className="itemsTags">
+                <Tags tags={appart.tags} />
+              </ol>
+            </div>
           </div>
-          <div className="lodging__tags">
-            <ol className="itemsTags">
-              <Tags tags={appart.tags} />
-            </ol>
-          </div>
-          <div className="lodging__wrapper">
+          <div className="lodging__wrapperinfosHost">
             <InfosHost appart={appart} />
           </div>
         </div>

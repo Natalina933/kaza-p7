@@ -1,8 +1,7 @@
-.lodging__wrapper {
+.lodging__wrapperinfosHost {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // autres styles
 }
 
 
@@ -10,6 +9,9 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  // autres styles
+}
+lodging__infos{
+  display: flex;
+  flex-direction: row;
 }
 
